@@ -1,0 +1,29 @@
+.uk-grid-small {
+    margin-left: 0;
+}
+
+//team
+.grid-team {
+    display: flex;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+}
+
+.uk-grid-small {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+//grid work 
+.go-drible-work {
+    color: $global-color;
+}
+
+.grid-works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: $global-xlarge-font-size *2.1;
+}

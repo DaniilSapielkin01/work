@@ -1,0 +1,81 @@
+@media screen and (max-width:885px) {
+    //navbar   
+    .uk-navbar-right {
+        display: none;
+    }
+    #menuToggle {
+        display: block;
+    }
+    //footer 
+    .footer-info-logo,
+    .footer-our-studio {
+        max-width: 46%;
+    }
+}
+
+@media screen and (max-width:845px) {
+    //body-form-brand
+    .body-form-brand {
+        flex-wrap: wrap;
+    }
+    .form {
+        width: 85%;
+        margin: auto;
+    }
+    .brand {
+        width: 85%;
+        margin: auto;
+    }
+    .brand-block {
+        max-width: 100%;
+        justify-content: space-around;
+    }
+    .brand-title {
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width:670px) {
+    //content story 
+    .content-story {
+        flex-wrap: wrap;
+        img {
+            margin: 0 auto 25px;
+        }
+        .text-story {
+            text-align: center;
+            .text {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:640px) {
+    //expertise card 
+    .card-expertise {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        margin: 3px auto;
+        &:nth-child(3n+3) {
+            border-right: 1px solid rgba(0, 0, 0, 0.2);
+        }
+    }
+    //footer 
+    .footer-info-bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+        .info-help-title-bottom {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media screen and (max-width:515px) {
+    //burger menu 
+    #menuToggle span {
+        left: 77vw;
+    }
+    #menuToggle input {
+        left: 77vw;
+    }
+}

@@ -1,0 +1,48 @@
+.text-banner {
+    color: $global-inverse-color;
+    line-height: $global-line-height;
+}
+
+.text {
+    opacity: 0.75;
+}
+
+.text-click {
+    font-size: $global-font-size;
+    color: $global-inverse-color;
+    letter-spacing: 0.8px;
+    opacity: 0.8;
+}
+
+.body-expertise {
+    text-align: center;
+    .heading-h3 {
+        margin-bottom: 17px;
+    }
+}
+
+.text-white {
+    color: #f9f9f9;
+}
+
+//team
+.team-info-card {
+    color: #fafafa;
+    font-size: $global-small-font-size - 0.2;
+    opacity: 0.5;
+}
+
+.team-bottom-text {
+    color: #f3f3f3;
+    font-size: $global-font-size;
+    margin-bottom: $global-large-font-size + 0.2;
+    font-weight: 300;
+    opacity: 0.85;
+}
+
+//footer 
+.footer-text {
+    font-size: $global-small-font-size;
+    color: $global-inverse-color;
+    margin-bottom: $global-small-font-size;
+}
