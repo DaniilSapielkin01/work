@@ -1,0 +1,229 @@
+$section-padding-vertical-m:              100px
+$section-padding-vertical:                $section-padding-vertical-m / 2
+$section-primaty-background:              gray
+section
+ position: relative
+ padding:  0
+ margin-bottom: 85px
+.banner 
+  position: relative
+  padding: 0
+  &-background 
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    z-index: -1
+    img 
+      width: 100%
+      height: 100%
+      object-fit: cover
+  
+  &-overlay 
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    opacity: 0.5
+  
+  &-foreground 
+    position: relative
+    z-index: 1
+ 
+//
+.header
+  background: #1d2126
+//banner
+.welcome 
+ margin: 225px 0
+ max-width: 750px
+ .text 
+  margin-bottom: 43px
+//we are modest 
+.modest 
+  border-bottom: 1px solid rgba(0,0,0,0.3)
+.we-are-modest 
+ display: flex
+ justify-content: space-between
+ margin-bottom: 85px
+ .text
+  margin-bottom: 35px
+ .modest-text-block 
+  max-width: 649px
+  display: flex
+  flex-direction: column
+  margin-right: 30px
+
+.aside-info
+ display: flex
+ flex-direction: column
+ max-width: 427px
+ margin-top: 2px
+ .info-to-client
+  display: flex
+  .nomber-info
+   span
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 20px 2px 0
+    width: 50px
+    height: 50px
+    background-color: #23b7a4
+    color: #fff
+//work
+.work
+ background: #3a454d
+
+.body-work
+ text-align: center
+ .heading-h2
+   text-align: left
+ .button
+  margin: 60px 15px 80px 15px
+.portfolio 
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin: 0 -15px 0 -30px
+        a 
+         padding: 0 30px 0 23px
+         width: 360px
+ 
+.block-image 
+        display: flex
+        height: 260px
+        width: 360px
+        position: relative
+        margin-bottom: 20px
+    
+    
+.image-overlay
+     img 
+        height: 260px
+        width: 360px
+    
+    
+.background-cover 
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 260px
+        opacity: 0
+        color: #fff
+        transition: .4s ease
+        position: absolute
+        margin: 0
+        padding: 0  
+    
+.plus 
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100%
+        width: 100%
+  
+.background-text 
+        background: #292f36
+        width: 360px
+        height: 60px
+        p
+         margin: 20px
+         padding: 0
+         text-transform: uppercase
+         color: #fff
+         font-size: 18px
+    
+    
+.background-cover
+ &:hover 
+        opacity: 1
+        background: rgba(0, 0, 0, 0.5)
+        margin: 0
+
+//what we do 
+.body-what-we 
+ display: flex
+ justify-content: space-around
+ flex-wrap: wrap
+ margin:  0 -30px 0 -30px 
+ .services-card 
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 255px
+    height: 220px
+    justify-content: center
+    margin: 0 0 80px 0
+    padding:  0 30px 0 30px 
+    .logo-services
+     margin: 0 auto 35px
+     span 
+      font-size: 60px
+      color: #23b7a4
+    .services-head 
+     align-self: center
+     font-size: 17px
+     text-transform: uppercase
+     color: #292f36
+     margin: 0 0 25px 0 
+//features
+.features 
+ background: #3a454d
+
+.body-features
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 120px
+    .post-block
+      height: auto
+      margin-bottom: 10px
+      width: 33.33%
+      padding: 0 15px
+      
+.post-head
+ margin-bottom: 50px
+ img
+   height: 100%
+   object-fit: cover
+//stay in touch
+.google-map 
+  overflow: hidden
+  padding-bottom: 6.25%
+  position: relative
+  height: 346px
+  iframe
+    left: 0
+    top: 0
+    height: 350px
+    width: 100%
+    position: absolute 
+    z-index: 0
+.content-stay-in
+ display: flex
+ justify-content: center
+ align-items: center
+ .info-stay
+  max-width: 535px
+  margin-right: 50px
+  .text 
+   margin-bottom: 40px
+//footer
+.footer 
+ background: #3a454d
+
+.body-footer 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  .nav-footer 
+   a
+    color: #fff
+    margin-right: 10px 
+    &:hover 
+     color: $button-primary-hover-background
+
+
+

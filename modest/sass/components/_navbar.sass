@@ -1,0 +1,141 @@
+.uk-navbar-nav
+ max-width: 650px
+ display: flex
+ flex-wrap: wrap
+ align-content: center
+ justify-content: space-between
+ margin-top: 2px
+ li
+  border: 2px solid transparent
+  color: #a4aead
+  font-size: 14px
+  text-transform: uppercase
+  padding: 7px 0
+  border-radius: 4px
+  transition: 0.4s ease
+  &:hover 
+   border: 2px solid #5b6168
+   transition: 0.4s ease
+  &:focus-within 
+    border: 2px solid #23b7a4
+  a 
+   font-family: $global-font-family
+   font-size: 14px
+   color: #a4aead
+   min-height: 0
+   &:focus-within
+    color: #23b7a4
+         
+.uk-navbar 
+ align-items: center
+ padding: 15px 0 
+.logo 
+ margin-right: 13px
+//modest block
+.nav-modest
+ display: flex
+ margin-top: 55px
+ a 
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 60px
+  height: 60px
+  margin-right: 1px
+  background: #c8cdd0
+  color: #fff
+  font-size: 20px
+  &:hover
+   background: #d0d5d9
+   color: $button-primary-hover-background
+   transition: 0.4s ease
+//burger menu
+@keyframes bounce
+	0%, 20%, 53%, 80%, 100%
+		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+		transform: translate3d(0,0,0)
+	40%, 43%
+		animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060)
+		transform: translate3d(0, 12px, 0)
+	70%
+		animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060)
+		transform: translate3d(0, 8px, 0)
+	90%
+		transform: translate3d(0, 4px, 0)
+
+
+$navWidth: 44%
+.nav-burger
+  display: none
+	 width: $navWidth
+	 position: fixed
+	 z-index: 100
+	 top: 0
+	 right: 0
+	 height: 100vh
+	 transform: translateX(100%)
+	 background: #3a454d
+	 transition: 0.35s
+
+.nav-toggle
+	position: relative
+	right: 4em
+	color: white
+	cursor: pointer
+	&:hover:before
+		animation: 0
+	&:before
+		content: '☰'
+		background: #8d8f92
+		display: inline-block
+		margin: 4.5px 
+		text-align: center
+		border-radius: 50%
+		width: 45px
+  height: 45px
+  display: flex
+  font-size: 25px
+  justify-content: center
+  align-items: center
+
+[id='nav-toggle']
+	display: none
+
+[id='nav-toggle']:checked
+	& ~ .nav-burger
+		transform: translateX(0)
+		& > .nav-toggle
+			&:before
+				animation: 0
+				content: '\21e5' //⇥
+			test()
+
+
+
+.nav-burger
+	nav
+		text-align: center
+		a
+			text-decoration: none
+			font-size: $button-font-size
+			padding: 1em
+			display: block
+			color: #FFF
+			&:hover
+				text-decoration: none
+    background: #e1e6ea
+    color: #23b7a4
+
+
+@media (max-width: $navWidth + 80)
+	.nav-burger
+		width: 100%
+	[id='nav-toggle']:checked
+		& ~ .nav
+			.nav-toggle
+				float: right
+				right: auto
+			nav
+				clear: both
+
+ 
